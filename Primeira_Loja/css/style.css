@@ -1,0 +1,38 @@
+*{
+    margin: 0px;
+
+}
+body{
+    display: grid;
+    grid-template-areas: 
+    "cabe cabe cabe"
+    "secu prin prin"
+    "roda roda roda";
+    grid-template-columns: 1fr 2fr 2fr;
+    grid-template-rows: 100px 800px 100px;
+    
+}
+header{
+    grid-area: cabe;
+    background-color: crimson;
+
+}
+main{
+    grid-area: prin;
+    background-color: orange;
+}
+
+aside{
+    grid-area: secu;
+    background-color: blueviolet;
+}
+footer{
+    grid-area: roda;
+    background-color: lightgreen;
+
+}
+#MMM{
+
+
+
+}
