@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+}
+
+@font-face {
+    font-family: wednesday;
+    src: url(Wednesday.ttf);
+}
+
+body{
+    display: grid;
+    grid-template-areas: 
+    "cab cab cab"
+    "sec man man"
+    "fot fot fot";
+    grid-template-columns: 1fr 8fr 1fr;
+    grid-template-rows: auto auto auto;
+
+} 
+
+header{ 
+    grid-area: cab ;
+    background-color: white;
+    height: 10vh;
+    background-color:#8b5be4 ;
+    
+
+}
+
+aside{
+    grid-area: sec;
+    background-color:white;
+    height: 80vh;
+    width: 20vh;
+    background-color: #9C82CB;
+
+
+}
+
+main{
+    grid-area: man;
+    background-color:white;
+    position: relative;
+    height: 80vh;
+
+    
+
+}
+
+footer{
+    grid-area: fot;
+    background-color: white;
+    height: 10vh;
+    background-color:#8b5be4;
+
+}
+
+@font-face {
+    font-family: wednesday;
+    src: url(Wednesday.ttf);
+}
+
+.MH1{
+    font-family: 'wednesday';
+    font-size: 100px;
+    position: absolute;
+    left: 40% ;
+
+}
+.M1H{
+    font-family: 'wednesday';
+    font-size: 50px;
+
+}
+.Mwc{
+    height: 150px;
+
+}
+.H1MC{
+    font-size: 25px;
+
+}
