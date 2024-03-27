@@ -77,24 +77,24 @@ footer{
 .H1MC{
     font-size: 25px;
 }
-.elementomae{
-    border: 2px red solid ;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 10px;
-    position: absolute;
-    left: -8.8px;
-}
-.caixa{
-    border: 2px red solid;
-    width: 80px;
-    height: 80px;
-}
 
 .logo1{
    height: 150px;
    position: relative;
    left: 35%;
+}
+.elementomae{
+    display: flex;
+    flex-direction: column;
+
+
+}
+.card{
+    border: 2px purple solid;
+    height: 200px;
+    width: 200px;
+}
+.card img{
+    height: 100px;
 
 }
