@@ -8,7 +8,7 @@ body{
     "cab cab cab"
     "sec man man"
     "fot fot fot";
-    grid-template-columns: 1fr 8fr 1fr;
+    grid-template-columns: 1fr 8fr 2fr;
     grid-template-rows: auto auto auto;
 
 } 
@@ -29,18 +29,16 @@ body{
 header{ 
     grid-area: cab ;
     background-color: white;
-    height: 10vh;
     background-color:#8b5be4 ;
-    
+    height: 120px;
 
 }
 
 aside{
     grid-area: sec;
     background-color:white;
-    height: 80vh;
-    width: 20vh;
-    background-color: #9C82CB;
+    height: auto;
+
 
 
 }
@@ -48,22 +46,26 @@ aside{
 main{
     grid-area: man;
     background-color:white;
-    position: relative;
-    height: 80vh;
+    height:auto;
 
 }
 
 footer{
     grid-area: fot;
     background-color: white;
-    height: 10vh;
-    background-color:#8b5be4;
+    height: 120px;
+    background-color:#8b5be4 
 
 }
 
 @font-face {
     font-family: wednesday;
     src: url(Wednesday.ttf);
+}
+
+@font-face{
+    font-family: fonte;
+    src: url(OldLondon.ttf);
 }
 
 .MH1{
@@ -93,17 +95,26 @@ footer{
 }
 .elementomae{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     gap: 4%;
-
+    padding-left: 50px;
 
 }
 .card{
-    border: 2px purple solid;
-    height: 200px;
+    border: 5px rgb(158, 157, 158) solid;
+    height: 220px;
     width: 200px;
-    border-radius: 5px;
+    border-radius: 15px;
+    transition: 0.3s;
+
 }
+
+.card:hover{
+    background-color: #dadada;
+
+}
+
 .card img{
     height: 100px;
 
@@ -114,5 +125,40 @@ footer{
 }
 .nosei1{
     color: black;
+    font-family: 'Lucida Sans', Arial, Helvetica, sans-serif;
+
+}
+
+.nosei2{
+    color:rgb(0, 255, 85);
+    font-family: 'Lucida Sans', Arial, Helvetica, sans-serif;
+
+}
+
+.klok{
+    font-size: 75px;
+    font-family: fonte;
+    padding-left: 50px;
+
+}
+
+.carrinho{
+    height: 75px;
+    position: absolute;
+    top: 0px;
+    right: 30px;
+
+}
+.perfil{
+    height: 75px;
+    position: absolute;
+    top: 0px;
+    right: 120px;
+
+}
+.logo{
+    height: 110px;
+    position: absolute;
+    left: 35%;
 
 }
