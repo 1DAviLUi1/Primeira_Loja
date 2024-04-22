@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+}
+
+body{
+    display: grid;
+    grid-template-areas: 
+    "cab cab cab"
+    "sec man man"
+    "fot fot fot";
+    grid-template-columns: 1fr 8fr 2fr;
+    grid-template-rows: auto auto auto;
+
+}
+
+header{ 
+    grid-area: cab ;
+    background-color: white;
+    background-color:#8b5be4 ;
+    height: 120px;
+
+}
+
+aside{
+    grid-area: sec;
+    background-color:white;
+    height: auto;
+
+
+
+}
+
+main{
+    grid-area: man;
+    background-color:white;
+    height:800px;
+
+}
+
+footer{
+    grid-area: fot;
+    background-color: white;
+    height: 120px;
+    background-color:#8b5be4 
+
+}
+
+main img{
+    height: 810px;
+    position: absolute;
+    right: 35%;
+    top: 50px;
+}
+h1{
+    position: absolute;
+    right:100px;
+    top: 190px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.locked{
+    position: absolute;
+    right:100px;
+    top: 220px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size:25px;
+
+}
