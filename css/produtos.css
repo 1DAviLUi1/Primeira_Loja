@@ -57,11 +57,55 @@ h1{
     top: 190px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-.locked{
+
+.pualo{
+    position: absolute;
     position: absolute;
     right:100px;
-    top: 220px;
+    top: 245px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size:25px;
+}
+
+.paulo{ 
+    position: absolute;
+    right:100px;
+    top: 275px;
+    color:rgb(0, 255, 85);
+    font-family: 'Lucida Sans', Arial, Helvetica, sans-serif;
+}
+
+.cinzeirofoto{
+    height: 550px;
+    position: relative;
+    right:12%;
+
+}
+
+.carrinho{
+    height: 75px;
+    position: absolute;
+    top: 0px;
+    right: 30px;
+
+}
+.perfil{
+    height: 75px;
+    position: absolute;
+    top: 0px;
+    right: 120px;
+
+}
+.logo{
+    height: 110px;
+    position: absolute;
+    left: 35%;
+
+}
+
+.bg{
+    position: absolute;
+    right:100px;
+    top: 225px;
+    
 
 }
