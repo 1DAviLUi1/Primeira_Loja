@@ -2,6 +2,11 @@
     margin: 0;
 }
 
+@font-face {
+    font-family: wednesday;
+    src: url(Wednesday.ttf);
+}
+
 body{
     display: grid;
     grid-template-areas: 
@@ -33,7 +38,7 @@ aside{
 main{
     grid-area: man;
     background-color:white;
-    height:800px;
+    height:975px;
 
 }
 
@@ -107,5 +112,80 @@ h1{
     right:100px;
     top: 225px;
     
+
+}
+
+.elementomae{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 4%;
+    padding-left: 1085px;
+    position: relative;
+    top: 12%;
+
+}
+.card{
+    border: 5px rgb(158, 157, 158) solid;
+    height: 280px;
+    width: 200px;
+    border-radius: 15px;
+    transition: 0.3s;
+    text-align: center;
+}
+
+.card:hover{
+    background-color: #dadada;
+
+}
+
+.card img{
+    height: 100px;
+
+}
+.not1{
+    text-decoration: none;
+
+}
+.nosei1{
+    color: black;
+    font-family: 'Lucida Sans', Arial, Helvetica, sans-serif;
+    position: relative;
+    top: 20%;
+    left: -20px;
+
+}
+
+.nosei2{
+    color:rgb(0, 255, 85);
+    font-family: 'Lucida Sans', Arial, Helvetica, sans-serif;
+    position: relative;
+    top: 20%;
+    left: -20px;
+
+}
+
+.SEEUL{
+    position: relative;
+    top: 20%;
+    left: 0.5%;
+    width: 150px;
+    height: 150px;
+
+}
+
+.NOWANDTH{
+    position: relative;
+    top: 20%;
+    left: -20px;
+    width: 250px;
+
+}
+
+.klok{
+    font-size: 45px;
+   font-family: wednesday;
+    left: 50%;
+    top: 75%;
 
 }
