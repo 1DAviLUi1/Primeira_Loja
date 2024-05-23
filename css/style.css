@@ -53,7 +53,7 @@ main{
 footer{
     grid-area: fot;
     background-color: white;
-    height: 120px;
+    height: 180px;
     background-color:#8b5be4 
 
 }
@@ -161,4 +161,37 @@ footer{
     position: absolute;
     left: 35%;
 
+}
+
+
+ul{
+    color: black;
+    list-style: none;
+}
+
+li{
+    margin-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.ajuda{
+    position: absolute;
+    left: 40px;
+}
+
+.ulajuda{
+    position: absolute;
+    bottom: -25%;
+}
+
+.redes{
+    position: absolute;
+    right: 100px;
+}
+
+.ulredes{
+    position: absolute;
+    right: 150px;
+    bottom: -25%;
+    line-height: 39px;
 }

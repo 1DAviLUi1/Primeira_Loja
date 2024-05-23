@@ -1,0 +1,156 @@
+body{
+    margin: 0;
+    height: 1100px;
+    display: grid;
+    grid-template-areas:
+    "header header header"
+    "main main main"
+    "footer footer footer";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 5fr 1fr;
+}
+
+@media screen and (max-width: 800px){
+    body{
+        margin: 0;
+        display: grid;
+        grid-template-areas:
+        "header"
+        "main"
+        "footer";
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto;
+    }
+}
+
+header{
+    grid-area: header;
+    position: relative;
+    height: 125px;
+    background-color:#8b5be4;
+}
+
+main{
+    grid-area: main;
+}
+
+.seccadastro{
+    height: 550px;
+    width: 500px;
+    position: absolute;
+    top: 28%;
+    left: 17.4%;
+    border-right: 3px solid lightgray;
+    text-align: center;
+}
+
+.seclogin{
+    height: 550px;
+    width: 500px;
+    position: absolute;
+    top: 28%;
+    right: 17.4%;
+    border-left: 3px solid lightgray;
+    text-align: center;
+}
+
+.caixatexto{
+    height: 45px;
+    width: 325px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+.botao{
+    background-color:#8b5be4;
+    color: white;
+    border-radius: 50px;
+    width: 200px;
+}
+
+.botao:hover{
+    background-color: #8b5be4;
+    transition: 0.1s;
+}
+
+footer{
+    grid-area: footer;
+    position: relative;
+    height: 180px;
+    background-color:#8b5be4;
+}
+
+.logo{
+      height: 110px;
+    position: absolute;
+    left: 35%;
+
+}
+
+.instagram{
+    height: 25px;
+    position: absolute;
+    bottom: 130px;
+    right: 235px;
+}
+
+.facebook{
+    height: 60px;
+    position: absolute;
+    bottom: 65px;
+    right: 217.5px;
+}
+
+.youtube{
+    height: 28px;
+    position: absolute;
+    bottom: 32px;
+    right: 233px;
+}
+
+.titulo{
+    font-family:'Lucida Sans', Arial, Helvetica, sans-serif;
+    font-size: 40px;
+}
+
+h2{
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.botao h1{
+    font-family: 'Lucida Sans', Arial, Helvetica, sans-serif;
+}
+
+ul{
+    color: black;
+    list-style: none;
+}
+
+li{
+    margin-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.ajuda{
+    position: absolute;
+    left: 40px;
+}
+
+.ulajuda{
+    position: absolute;
+    bottom: -27%;
+}
+
+.redes{
+    position: absolute;
+    right: 100px;
+}
+
+.ulredes{
+    position: absolute;
+    right: 150px;
+    bottom: -25%;
+    line-height: 39px;
+}
