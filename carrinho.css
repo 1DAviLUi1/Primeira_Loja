@@ -1,0 +1,345 @@
+/*grid e responsividade*/
+
+body{
+    margin: 0;
+    display: grid;
+    grid-template-areas:
+    "header header header"
+    "main main main"
+    "footer footer footer";
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+@media screen and (max-width: 800px){
+    body{
+        margin: 0;
+        display: grid;
+        grid-template-areas:
+        "header"
+        "main"
+        "footer";
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto;
+    }
+}
+
+/*estruturas semanticas, cards e botoes*/
+
+header{
+    grid-area: header;
+    position: relative;
+    height: 125px;
+    background-color:crimson;
+}
+
+main{
+    grid-area: main;
+    height: 700px;
+}
+
+.secprodutos{
+    display: flex;
+    height: 500px;
+    width: 812.5px;
+    position: absolute;
+    margin-top: 95px;
+    margin-left: 80px;
+}
+
+.produto1{
+    height: 120px;
+    width: 812.5px;
+    border: 5px solid lightgray;
+    border-radius: 10px;
+    font-family:'Lucida Sans', Arial, Helvetica, sans-serif;
+}
+
+.menos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    top: 50px;
+    left: 425px;
+    border: 4px solid lightgray;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.menos:hover{
+    background-color: lightgray;
+    transition: 0.1s;
+}
+
+.mais{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    top: 50px;
+    left: 505px;
+    border: 4px solid lightgray;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.mais:hover{
+    background-color: lightgray;
+    transition: 0.1s;
+}
+
+.secresumo{
+    background-color: rgb(245, 245, 245);
+    height: 400px;
+    width: 460px;
+    position: absolute;
+    margin-top: 95px;
+    margin-left: 947px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 5px solid lightgray;
+    border-radius: 10px;
+}
+
+.caixacep{
+    position: absolute;
+    height: 35px;
+    width: 250px;
+    top: 20px;
+    left: 225px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.caixacupom{
+    position: absolute;
+    height: 35px;
+    width: 250px;
+    top: 100px;
+    left: 225px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.finalizar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-color: crimson;
+    color: white;
+    height: 65px;
+    width: 225px;
+    bottom: 40px;
+    left: 130px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.finalizar:hover{
+    background-color: rgb(220, 57, 90);
+    transition: 0.1s;
+}
+
+footer{
+    grid-area: footer;
+    position: relative;
+    height: 225px;
+    background-color: black;
+}
+
+/*imagens*/
+
+.logo{
+    height: 50px;
+    position: absolute;
+    top: 35px;
+    left: 75px;
+}
+
+.perfil{
+    height: 50px;
+    border-radius: 50px;
+    position: absolute;
+    top: 35px;
+    right: 150px;
+    background-color: crimson;
+}
+
+.perfil:hover{
+    background-color: rgb(220, 57, 90);
+    transition: 0.1s;
+}
+
+.carrinho{
+    height: 50px;
+    border-radius: 50px;
+    position: absolute;
+    top: 35px;
+    right: 75px;
+    background-color: crimson;
+}
+
+.carrinho:hover{
+    background-color: rgb(220, 57, 90);
+    transition: 0.1s;
+}
+
+div img{
+    width: 150px;
+}
+
+.instagram{
+    height: 25px;
+    position: absolute;
+    bottom: 130px;
+    right: 235px;
+}
+
+.facebook{
+    height: 60px;
+    position: absolute;
+    bottom: 65px;
+    right: 217.5px;
+}
+
+.youtube{
+    height: 28px;
+    position: absolute;
+    bottom: 32px;
+    right: 233px;
+}
+
+/*texto*/
+
+main h1{
+    font-size: 35px;
+    font-family:'Lucida Sans', Arial, Helvetica, sans-serif;
+}
+
+.resumoh3{
+    margin-top: 30px;
+    font-size: 22.5px;
+    font-family:'Lucida Sans', Arial, Helvetica, sans-serif;
+}
+
+.finalizar h3{
+    font-size: 22.5px;
+    font-family:'Lucida Sans', Arial, Helvetica, sans-serif;
+}
+
+.precototal{
+    position: absolute;
+    top: 165px;
+    right: 20px;
+    font-size: 22.5px;
+    font-family:'Lucida Sans', Arial, Helvetica, sans-serif;
+}
+
+.preco2{
+    position: absolute;
+    top: 205px;
+    right: 20px;
+    color: gray;
+    line-height: 0px;
+    font-family:'Lucida Sans', Arial, Helvetica, sans-serif;
+}
+
+hr{
+    color: lightgray;
+}
+
+.carrinhotxt{
+    position: absolute;
+    margin-top: 30px;
+    margin-left: 80px;
+}
+
+.resumotxt{
+    position: absolute;
+    margin-top: 30px;
+    margin-left: 945px;
+}
+
+.nome{
+    position: absolute;
+    top: 0px;
+    left: 165px;
+}
+
+.desc{
+    position: absolute;
+    top: 35px;
+    left: 165px;
+    color: gray;
+    line-height: 10px;
+}
+
+.tam{
+    position: absolute;
+    top: 60px;
+    left: 165px;
+    color: gray;
+    line-height: 10px;
+}
+
+.qtd{
+    position: absolute;
+    top: 0px;
+    left: 430px;
+}
+
+.qtdtxt{
+    position: absolute;
+    top: 40px;
+    left: 480px;
+}
+
+.preco{
+    position: absolute;
+    top: 25px;
+    left: 650px;
+}
+
+h2{
+    color: white;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+ul{
+    color: white;
+    list-style: none;
+}
+
+li{
+    margin-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.ajuda{
+    position: absolute;
+    left: 40px;
+}
+
+.ulajuda{
+    position: absolute;
+    bottom: 0px;
+}
+
+.redes{
+    position: absolute;
+    right: 100px;
+}
+
+.ulredes{
+    position: absolute;
+    right: 150px;
+    bottom: 0px;
+    line-height: 39px;
+}
