@@ -1,5 +1,16 @@
 *{
     margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+@font-face {
+    font-family: wednesday;
+    src: url(Wednesday.ttf);
+}
+
+@font-face{
+    font-family: fonte;
+    src: url(OldLondon.ttf);
 }
 
 body{
@@ -194,4 +205,89 @@ li{
     right: 150px;
     bottom: -25%;
     line-height: 39px;
+}
+
+.menu .menu-lines{
+    position: absolute;
+    z-index: 999;
+    width: 35px;
+    height: 35px;
+}
+
+.menu .menu-lines span{
+    display: block;
+    width: 35px;
+    height: 5px;
+    margin-bottom: 10px;
+    background-color: black;
+    border-radius: 3px;
+    transition: all ease .2s;
+}
+
+.menu .menu-faketrigger{
+    position: absolute;
+    z-index: 1000;
+    width: 35px;
+    height: 35px;
+    opacity:0;
+    cursor: pointer;
+}
+
+.menu .menu-faketrigger:checked ~.menu-lines span{
+    background-color: black;
+
+
+}
+
+.menu .menu-faketrigger:checked ~ .menu-lines span:nth-child(1) {
+    transform-origin: 0% 0%;
+    transform: rotate(45deg) scaleX(1.25);
+}
+
+.menu .menu-faketrigger:checked ~ .menu-lines span:nth-child(2) {
+    opacity: 0;
+}
+
+.menu .menu-faketrigger:checked ~ .menu-lines span:nth-child(3) {
+    transform-origin: 0% 100%;
+    transform: rotate(-45deg) scaleX(1.25);
+}
+
+.menu ul{
+    position: absolute;
+    z-index: 998;
+    left: 0;
+    top: 0;
+    width: 300px;
+    height: 100vh;
+    background-image: url(WANDINHA_maneiro.png);
+    margin-left:-400px ;
+}
+.menu .menu-faketrigger:checked ~ul{
+    margin-left: 0;
+
+}
+
+.menu ul li{
+    padding: 0;
+
+}
+
+.menu ul li{
+    padding: 10px 30px;
+
+}
+
+.menu ul li a{
+    text-decoration: none;
+    color: black;
+    font-size:40px ;
+    transition: all ease .2s;
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: white;
+}
+
+.menu ul li a:hover{
+    color: #999;
+
 }
